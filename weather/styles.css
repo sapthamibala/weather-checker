@@ -1,0 +1,114 @@
+/* style.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('images/background image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.catchy-phrase {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #76a8f2;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+.card {
+    background-color: rgba(93, 169, 231, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 430px;
+    max-width: 100%; /* Make the card responsive to the viewport */
+    margin: 0 auto;
+    display: block; 
+}
+
+.search {
+    display: flex;
+    flex-wrap: wrap; /* Allow search elements to wrap to the next line on smaller screens */
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+input {
+    flex-grow: 1;
+    padding: 8px;
+    border: none;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px; /* Add margin bottom for better spacing on smaller screens */
+
+}
+
+button {
+    background-color: #3c5e8f;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 8px;
+    height: 100%; 
+    font-size: 14px; 
+}
+
+
+.err {
+    display: none;
+    padding: 10px;
+    background-color: #ffcccc;
+    color: #cc0000;
+    text-align: center;
+}
+
+.weather {
+    padding: 20px;
+}
+
+.weather-icon {
+    width: 50px;
+}
+
+.temp {
+    font-size: 36px;
+    margin: 10px 0;
+}
+
+.city {
+    font-size: 24px;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+}
+
+.div {
+    margin-left: 10px;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 600px) {
+    .card {
+        width: 100%;
+    }
+
+    input {
+        flex-grow: 1;
+        margin-right: 0;
+    }
+}
